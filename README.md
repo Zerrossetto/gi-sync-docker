@@ -1,5 +1,5 @@
 # GI-Sync-Docker Repository
-===========================
+___________________________
 
 ## Dockerfile
 
@@ -42,6 +42,7 @@ FLUSH PRIVILEGES;
 
 ### Apache server configuration
 
+```
 docker run -d \
 -it \
 --name wp-apache-php \
@@ -53,4 +54,5 @@ docker run -d \
 -e "php.display_errors=On" \
 --mount type=bind,source=${HOME}/workspace/gi-sync/wp-apache-php/htdocs,target=/app \
 zerrossetto/php-apache-dev-yaml:7.1
+```
 
